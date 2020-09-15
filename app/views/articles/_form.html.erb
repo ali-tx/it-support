@@ -1,0 +1,72 @@
+
+<div class="portlet box green" style="margin-right: 30%; margin-left: 30%; margin-top: 10%">
+  <div class="portlet-title">
+    <div class="caption">
+      <i class="fa fa-gift"></i>Form
+    </div>
+  </div>
+  <div class="portlet-body form">
+    <!-- BEGIN FORM-->
+<%= form_with(model: @article, local: true, class:"form-horizontal") do |form| %>
+  <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@article.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @article.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+      <div class="form-body">
+        <div class="form-group">
+          <%= form.label :Country, class:"col-md-3 control-label"%>
+          <div class="col-md-4">
+            <%= form.text_field :country, class:"form-control", placeholder:"Country" %>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= form.label :city, class:"col-md-3 control-label"%>
+          <div class="col-md-4">
+            <%= form.text_field :city, class:"form-control", placeholder:"City" %>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= form.label :candidate_name, class:"col-md-3 control-label"%>
+          <div class="col-md-4">
+            <%= form.text_field :candidate_name,  class:"form-control", placeholder:"Candidate Name" %>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= form.label :skills, class:"col-md-3 control-label"%>
+          <div class="col-md-4">
+            <%= form.text_field :skills,class:"form-control", placeholder:" Skills" %>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= form.label :email, class:"col-md-3 control-label"%>
+          <div class="col-md-4">
+            <%= form.text_field :email, class:"form-control", placeholder:" E-mail" %>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= form.label :Phone, class:"col-md-3 control-label"%>
+          <div class="col-md-4">
+            <%= form.text_field :phone, class:"form-control", placeholder:" Phone Number"%>
+          </div>
+        </div>
+      </div>
+      <div class="form-actions fluid">
+        <div class="col-md-offset-3 col-md-9">
+          <%= form.submit 'Save', class:'btn blue' %>
+          <%= link_to 'cancel', articles_path, class:'btn default' %>
+        </div>
+      </div>
+<!--    </form>-->
+<% end %>
+<!-- END FORM-->
+  </div>
+</div>
