@@ -10,18 +10,24 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 # gem 'sqlite3'
 gem 'devise'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
-gem "font-awesome-rails"
+# gem "font-awesome-rails"
+gem 'font-awesome-rails', '~> 4.5'
+
 gem 'font-awesome-sass'
 
 gem 'simple_form'
 
 gem 'popper_js', '~> 1.14.5'
 
+gem 'babel-transpiler'
+
 gem 'summernote-rails', '~> 0.8.12.0'
 
 gem 'pg'
 
 gem 'bootstrap-sass'
+
+gem 'refinerycms'
 
 gem 'jquery-rails'
 # Use Puma as the app server
@@ -30,6 +36,8 @@ gem 'puma', '~> 4.1'
 gem 'sass-rails', '~> 6'
 
 gem 'webpacker', '~> 4.0'
+
+gem 'autoprefixer-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -116,6 +124,13 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+group :assets do
+  # gem 'sass-rails', '~> 5.0'
+  # gem 'font-awesome-rails'
+  # gem 'font-awesome-sass'
+  gem 'font-awesome-sass-rails'
+  gem 'twitter-bootstrap-rails'
 end
 
 group :development do
