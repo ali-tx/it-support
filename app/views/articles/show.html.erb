@@ -1,31 +1,49 @@
-
-<p>
-  <strong>Country:</strong>
+<div class="col-md-offset-4 col-md-4" align="" style="margin-top: 10%; background-color: white;">
+  <table class="table table-striped " >
+    <tbody>
+    <tr>
+<td>
+  <strong>Country:</strong></td>
+      <td>
   <%= @article.country %>
-</p>
+      </td>
 
-<p>
-  <strong>City:</strong>
-  <%= @article.city %>
-</p>
+</tr>
+<tr>
+  <td><strong>City:</strong></td>
+  <td><%= @article.city %></td>
+</tr>
 
-<p>
-  <strong>Candidate Name:</strong>
+<tr>
+  <td>
+  <strong>Candidate Name:</strong></td>
+  <td>
   <%= @article.candidate_name %>
-</p>
+  </td>
+</tr>
 
-<p>
-  <strong>Skills:</strong>
-  <%= @article.skills %>
-</p>
+<tr>
+  <td>
+  <strong>Skills:</strong></td>
+  <td>
+  <%= @article.skills %></td>
+</tr>
 
-<p>
-  <strong>Email:</strong>
-  <%= @article.email %>
-</p>
+<tr>
+  <td>
+  <strong>Email:</strong></td>
+  <td>
+  <%= @article.email %></td>
+</tr>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @article.phone %>
-</p>
-<%= link_to 'Back', articles_path %>
+<tr>
+  <td>
+  <strong>Phone:</strong></td>
+  <td>
+    <%= @article.phone %></td>
+
+</tr>
+    </tbody>
+  </table>
+  <%= link_to 'Back', articles_path, class: "btn btn-success ", style:"margin-bottom: 2%" %>
+</div>
