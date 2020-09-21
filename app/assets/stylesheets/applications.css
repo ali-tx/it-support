@@ -12,5 +12,12 @@
  *
  *= require_tree .
  *= require_self
+  *= require bootstrap.css
+ *= require tether
+ *= require default.css
+ *= require devise.css
+ *= require common.css
+ *= require jquery-ui
+ *= require bootstrap-datetimepicker
  */
 
