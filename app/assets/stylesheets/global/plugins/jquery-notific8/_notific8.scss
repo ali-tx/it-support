@@ -9,7 +9,7 @@
  */
 
 // compass includes
-@import "compass/css3/transform";
+//@import "compass/css3/transform";
 
 // mixins
 @mixin theme($name, $border-color, $background-color, $close-background-color: $border-color, $text-color: #fff, $close-text-color: $text-color) {
@@ -109,7 +109,7 @@
   .jquery-notific8-close-sticky {
     top: (31em/16);
     right: (-38em/16);
-    @include rotate(90deg);
+    //@include rotate(90deg);
   }
 }
 
@@ -125,7 +125,7 @@
   .jquery-notific8-close-sticky {
     top: (31em/16);
     left: (-38em/16);
-    @include rotate(270deg);
+    //@include rotate(270deg);
   }
 }
 
