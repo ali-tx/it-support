@@ -14,7 +14,6 @@
  *= require_self
  */
 /*@import "_bootstrap-sprockets.scss";*/
-@import "bootstrap";
 
 a :hover{
     color: black;
