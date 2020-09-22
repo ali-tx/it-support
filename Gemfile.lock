@@ -223,7 +223,6 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    yui-compressor (0.12.0)
     zeitwerk (2.4.0)
 
 PLATFORMS
@@ -253,7 +252,6 @@ DEPENDENCIES
   tzinfo-data
   uglifier
   web-console
-  yui-compressor (~> 0.12.0)
 
 RUBY VERSION
    ruby 2.6.3p62
