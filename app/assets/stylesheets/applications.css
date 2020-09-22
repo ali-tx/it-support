@@ -13,7 +13,7 @@
  *= require_tree.
  *= require_self
  */
-@import "_bootstrap-sprockets.scss";
+/*@import "_bootstrap-sprockets.scss";*/
 @import "bootstrap";
 
 a :hover{
