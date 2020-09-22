@@ -78,9 +78,7 @@ Rails.application.configure do
 
 
   config.assets.css_compressor = :yui
-  # config.assets.js_compressor = :uglify
-  config.assets.js_compressor = Uglifier.new(harmony: true)
-
+  config.assets.js_compressor = :uglify
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
