@@ -6,7 +6,6 @@
     </div>
   </div>
   <div class="portlet-body form">
-    <!-- BEGIN FORM-->
 <%= form_with(model: @article, local: true, class:"form-horizontal") do |form| %>
   <% if @article.errors.any? %>
     <div id="error_explanation">
@@ -65,8 +64,6 @@
           <%= link_to 'cancel', articles_path, class:'btn default' %>
         </div>
       </div>
-<!--    </form>-->
 <% end %>
-<!-- END FORM-->
   </div>
 </div>

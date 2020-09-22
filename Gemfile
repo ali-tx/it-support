@@ -35,7 +35,7 @@ gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 6'
 
-gem 'webpacker', '~> 4.0'
+gem 'webpacker'
 
 gem 'autoprefixer-rails'
 
