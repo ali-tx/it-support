@@ -20,7 +20,7 @@ gem 'summernote-rails'
 gem 'pg'
 
 gem 'bootstrap-sass'
-
+gem 'yui-compressor', '~> 0.12.0'
 gem 'jquery-rails'
 # Use Puma as the app server
 gem 'puma'
